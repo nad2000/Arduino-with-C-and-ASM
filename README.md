@@ -42,23 +42,11 @@ Here's a minimal example for each; they turn on pin PB5 (digital pin 13, which h
       </td>
     </tr>
     <tr>
-      <td rowspan="2">
-      </td>
       <td>
-      </td>
-      <td>
-      </td>
-      <td rowspan="2">
-      </td>
-    </tr>
-    <tr>
-      <td rowspan="2">
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td rowspan="2">
+        ```shell
+avr-gcc -c -mmcu=attiny44 -o led.out led.S
+avr-objcopy -j .text -O ihex led.out led.hex
+        ```
       </td>
     </tr>
   </tbody>
