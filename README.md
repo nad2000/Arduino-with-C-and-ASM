@@ -22,7 +22,6 @@ They each have slightly different syntaxes and command lines for getting the sou
 Here's a minimal example for each; they turn on pin PB5 (digital pin 13, which had an LED connected to it on the board).
 
 
-| Assembly  | Code | Command Line | Notes |
 <table>
   <thead>
     <tr>
@@ -32,7 +31,32 @@ Here's a minimal example for each; they turn on pin PB5 (digital pin 13, which h
     <tr>
   </thead>
   <tbody>
-    
+    <tr>
+      <td rowspan="2">
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td rowspan="2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
   </tbody>
 </table>
 
