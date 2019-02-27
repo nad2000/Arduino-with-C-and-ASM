@@ -6,7 +6,7 @@ only C/C++ compiler, Assembly and flashing.
 
 ## Toolchain
 
-![toolchain](toolchain.png "Toolchain for different inputs.")
+![toolchain](toolchain.svg "Toolchain for different inputs.")
 
 
 ###  Assembly syntax
