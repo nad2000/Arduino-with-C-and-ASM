@@ -1,7 +1,7 @@
 digraph TC {
-	"code.S" -> "code.hex" [label="avra -o code.hex"];
+	"code.asm" -> "code.hex" [label="avra -o code.hex"];
 	"code.c" -> "code.o" [label="avr-gcc"];
-	"code.asm" -> "code.o" [label="avr-as"];
+	"code.S" -> "code.o" [label="avr-as"];
 	
 	subgraph GCC {
 		color=darkgreen;

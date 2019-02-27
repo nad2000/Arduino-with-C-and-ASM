@@ -12,5 +12,7 @@ else
 fi
 
 avr-gcc -g -mmcu=$P -o $NAME.elf $NAME.o
-avr-objcopy -j .text -j .data -O ihex $NAME.elf led.hex
+avr-objcopy -j .text -j .data -O ihex $NAME.elf $NAME.hex
 avr-size --format=avr --mcu=$P $NAME.elf
+
+
