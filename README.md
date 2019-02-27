@@ -39,7 +39,7 @@ Here's a minimal example for each; they turn on pin PB5 (digital pin 13, which h
         TODO:
       </td>
       <td rowspan="2">
-GNU's assembler is conveniently included in the <a href="https://www.obdev.at/products/crosspack/index.html">CrossPack</a> package for Mac OS X, WinAVR for Windows, and the gcc-avr packages on various Linux distributions. Unfortunately, it has awkward syntax, requiring <pre>_SFR_IO_ADDR()</pre> around the names of the I/O registers. Confusingly, you'll need to compile your code with avr-gcc, even though it's assembly. If you try avr-as, you'll get a message like "Error: constant value required".
+GNU's assembler is conveniently included in the <a href="https://www.obdev.at/products/crosspack/index.html">CrossPack</a> package for Mac OS X, WinAVR for Windows, and the gcc-avr packages on various Linux distributions. Unfortunately, it has awkward syntax, requiring <code>_SFR_IO_ADDR()</code> around the names of the I/O registers. Confusingly, you'll need to compile your code with avr-gcc, even though it's assembly. If you try avr-as, you'll get a message like "Error: constant value required".
       </td>
     </tr>
     <tr>
