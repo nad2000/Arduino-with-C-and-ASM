@@ -1,0 +1,16 @@
+#!/bin/bash
+P=atmega328p
+NAME=${1%.*}
+EXT=echo ${1##*.}
+AVR_DIR=/home/rcir178/arduino-1.8.8/hardware/arduino/avr
+export C_INCLUDE_PATH=C_INCLUDE_PATH:$AVR_DIR/cores/arduino/:$AVR_DIR/variants/standard/
+
+if [ "$EXT" == "c" ] || [ "$EXT" == "cpp" ] ; then
+  avr-gcc -g -Os -mmcu=$P -c $1
+else
+  avr-as -g  -mmcu=$P -o $NAME.o -c $1
+fi
+
+avr-gcc -g -mmcu=$P -o $NAME.elf $NAME.o
+avr-objcopy -j .text -j .data -O ihex $NAME.elf led.hex
+avr-size --format=avr --mcu=$P $NAME.elf
