@@ -1,0 +1,20 @@
+digraph TC {
+	"code.S" -> "code.hex" [label="avra -o code.hex"];
+	"code.c" -> "code.o" [label="avr-gcc"];
+	"code.asm" -> "code.o" [label="avr-as"];
+	
+	subgraph GCC {
+		color=darkgreen;
+		"code.o" -> "code.elf" [label="avr-gcc"];
+		"code.elf" -> "code.hex" [label="avr-objcompy"];
+	}
+
+	"code.hex" -> "FTDI USP to Serial" [label="avrdude"];
+	"FTDI USP to Serial" -> "ICSP Programmer"
+
+	"FTDI USP to Serial" [shape=box];
+	"ICSP Programmer" [shape=box,style=filled,fillcolor=lightskyblue1];
+	"code.S" [style=filled,fillcolor=salmon1];
+	"code.c" [style=filled,fillcolor=lightyellow1];
+	"code.asm" [style=filled,fillcolor=lightsteelblue1];
+}
