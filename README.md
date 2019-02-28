@@ -67,10 +67,21 @@ You will need to download or define yourself macros for your chip (included in A
       </td>
     </tr>
     <tr>
+      <td>Atmel's Assembler</td>
+    </tr>
+    <tr>
+      <td><a href="/hsoft/avra">avra</a></td>
+      <td><pre>;specify the device:
+.include "m328Pdef.inc"
+    sbi DDRB, 5
+    sbi PORTB, 5
+loop:
+    rjmp loop  ; pevents running out</pre>
+      </td>
       <td>
-        <pre>
-avra code.asm
-        <pre>
+The official (Windows only) AVR assembler from Atmel (avrasm).
+You should be able to compile your code from within 
+<a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel Studio</a>.
       </td>
     </tr>
   </tbody>
@@ -86,3 +97,4 @@ avra code.asm
  * [Gerd's AVR assembler gavrasm](http://www.avr-asm-tutorial.net/gavrasm/index_en.html)
  * [Atmel AVR instruction set](https://en.wikipedia.org/wiki/Atmel_AVR_instruction_set)
  * [AVR C Runtime Library](https://www.nongnu.org/avr-libc/)
+ 
