@@ -50,6 +50,29 @@ avr-objcopy -j .text -O ihex code.o code.hex
         <pre>
       </td>
     </tr>
+    <tr>
+      <td rowspan="2"><a href="/hsoft/avra">avra</a></td>
+      <td><pre>;specify the device:
+.device ATmega328P
+;OR use definition:
+;.include "./m328Pdef.inc"
+    sbi 0x24, 5
+    sbi 0x25, 5
+loop:
+    rjmp loop  ; pevents running out</pre>
+      </td>
+      <td rowspan="2">
+Another open-source assembler that is compatible with Atmel's AVRASM32. It has the advantage of being written in C, so you can compile it with the standard development tools (e.g. Xcode on the Mac). There are also Windows binaries available.
+You will need to download or define yourself macros for your chip (included in AVR Studio). For instance, avra doesn't support newer AVRs like the ATtiny44A that was on our boards this week. To use it, you'll need the .inc file for your microcontroller (e.g. tn45def.inc for the ATtiny45). And then you could use defined macros instead of absolute addresses, for example, in case of ATmega328P, using "m328Pdef.inc", <b>DDRB</b> instead of <b>0x24</b>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <pre>
+avra code.asm
+        <pre>
+      </td>
+    </tr>
   </tbody>
 </table>
 
