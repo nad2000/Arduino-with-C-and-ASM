@@ -73,6 +73,21 @@ avra code.asm
         <pre>
       </td>
     </tr>
+    <tr>
+      <td><a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel's Assembler</a></td>
+      <td><pre>;specify the device:
+.include "m328Pdef.inc"
+    sbi DDRB, 5
+    sbi PORTB, 5
+loop:
+    rjmp loop  ; pevents running out</pre>
+      </td>
+      <td>
+The official (Windows only) AVR assembler from Atmel (avrasm).
+You should be able to compile your code from within 
+<a href="https://www.microchip.com/mplab/avr-support/atmel-studio-7">Atmel Studio</a>.
+      </td>
+    </tr>
   </tbody>
 </table>
 
