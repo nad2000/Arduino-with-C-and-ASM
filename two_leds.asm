@@ -1,4 +1,5 @@
-.include "./m328Pdef.inc"
+;.include "./m328Pdef.inc"
+.device ATmega328P
 start:
 	ldi r23, 0b00000001
 	ldi r24, 0b00000011
