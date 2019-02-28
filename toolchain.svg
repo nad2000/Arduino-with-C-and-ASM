@@ -12,8 +12,11 @@
 <!-- code.asm -->
 <g id="node1" class="node">
 <title>code.asm</title>
+<g id="a_node1"><a xlink:href="./code.asm" xlink:title="code.asm">
 <ellipse fill="#cae1ff" stroke="#000000" cx="44.1961" cy="-265" rx="44.393" ry="18"/>
 <text text-anchor="middle" x="44.1961" y="-261.3" font-family="Times,serif" font-size="14.00" fill="#000000">code.asm</text>
+</a>
+</g>
 </g>
 <!-- code.hex -->
 <g id="node2" class="node">
@@ -44,8 +47,11 @@
 <!-- code.c -->
 <g id="node3" class="node">
 <title>code.c</title>
+<g id="a_node3"><a xlink:href="./code.c" xlink:title="code.c">
 <ellipse fill="#ffffe0" stroke="#000000" cx="115.1961" cy="-439" rx="33.5952" ry="18"/>
 <text text-anchor="middle" x="115.1961" y="-435.3" font-family="Times,serif" font-size="14.00" fill="#000000">code.c</text>
+</a>
+</g>
 </g>
 <!-- code.o -->
 <g id="node4" class="node">

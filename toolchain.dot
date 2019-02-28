@@ -15,6 +15,6 @@ digraph TC {
 	"FTDI USP to Serial" [shape=box];
 	"ICSP Programmer" [shape=box,style=filled,fillcolor=lightskyblue1];
 	"code.S" [style=filled,fillcolor=salmon1,href="./code.S"];
-	"code.c" [style=filled,fillcolor=lightyellow1];
-	"code.asm" [style=filled,fillcolor=lightsteelblue1];
+	"code.c" [style=filled,fillcolor=lightyellow1,href="./code.c"];
+	"code.asm" [style=filled,fillcolor=lightsteelblue1,href="./code.asm"];
 }
